@@ -4,13 +4,13 @@
 
 Vamos assumir que temos uma rede de interação de pessoas, representada por um grafo conexo não direcionado com pesos. Cada pessoa é um vértice no grafo e o peso da aresta entre o vértice A e B é a frequência, ou intensidade de conexão, entre A e B. Por exemplo, assuma que esse peso mede o número de vezes no mês que A e B conversam.
 
-Se um membro do grafo é contaminado por um vírus, queremos determinar em quanto tempo todos os vértice do grafo estarão contaminados. O tempo de contaminação entre A e B é o inverso da frequência de contato entre A e B (se A e B se falam 4 vezes for mes, o tempo de contaminação entre A e B é 1/4 ou 0.25 de um mês.
+Se um membro do grafo é contaminado por um vírus, queremos determinar em quanto tempo todos os vértice do grafo estarão contaminados, ou seja, o tempo máximo de contaminação. O tempo de contaminação entre A e B é o inverso da frequência de contato entre A e B (se A e B se falam 4 vezes for mes, o tempo de contaminação entre A e B é 1/4 ou 0.25 de um mês.
 
 ### Algoritmo
 
 O problema trata-se de encontrar o menor caminho de um vértice para todos os demais vértices de um grafo, conhecido como shortest-path tree. A solução é o algoritmo de Dijkstra, o qual considera um conjunto S de menores caminhos, iniciado com um vértice fonte I. A cada passo do algoritmo busca-se nas adjacências dos vértices pertencentes a S aquele vértice com menor distância relativa a I e adiciona-o a S e, então, repetindo os passos até que todos os vértices alcançáveis por I estejam em S.
 
-Entretanto, veja que para esse problema específico não precisamos como resultado o caminho do vértice origem a todos os outros nós, mas apenas o tempo para a contaminação.
+Entretanto, veja que para esse problema específico não precisamos como resultado o caminho do vértice origem a todos os outros nós, mas apenas o tempo máximo para a contaminação.
 
 ### Formato dos dados
 

@@ -9,4 +9,4 @@ Projetos em Haskell, Prolog e Python. Disciplina MC346 - Paradigmas de Programa�
 
 ## Projeto 1 - Haskell
 
-Projeto em Haskell para encontrar o tempo mínimo de contaminação de uma rede de interação de pessoas, dada uma pessoa contaminada inicialmente. A rede é representada por um grafo conexo não direcionado com pesos, e o algoritmo utilizado foi o de Dijkstra para encontrar a árvore de caminhos mínimos.
+Projeto em Haskell para encontrar o tempo máximo de contaminação de uma rede de interação de pessoas, dada uma pessoa contaminada inicialmente. A rede é representada por um grafo conexo não direcionado com pesos, e o algoritmo utilizado foi o de Dijkstra para encontrar a árvore de caminhos mínimos.
