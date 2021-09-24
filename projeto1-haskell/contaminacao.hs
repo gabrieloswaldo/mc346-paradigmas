@@ -74,7 +74,8 @@ getMaybe :: Maybe a -> a
 getMaybe = fromMaybe (error "Erro ao extrair valor maybe")
 
 showResult :: DNodeMap -> IO ()
-showResult tree = printf "%.2f\n" $ Map.foldl (\acc (_, _, wuv, _) -> acc + wuv) 0 tree
+showResult tree = printf "%.2f\n" $ getResult tree 
+  where getResult = Map.foldl (\maxValue (duv, _, _, _) -> if duv > maxValue then duv else maxValue) 0
 
 
 -- Setup do grafo utilizando um Map
